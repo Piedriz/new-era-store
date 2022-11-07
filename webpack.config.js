@@ -3,6 +3,7 @@ const path = require('path');
 
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
+const Dotenv = require('dotenv-webpack');
 
 module.exports = {
     entry: './src/index.js',
@@ -53,6 +54,7 @@ module.exports = {
             filename: 'assets/[name].[hash].css',
         }),
         new CleanWebpackPlugin(),
+        new Dotenv(),
     ],
     devServer: {
         static: {

@@ -12,8 +12,9 @@ import { Succes } from '../pages/Succes'
 import { AppContextProvider } from '../context/AppContext';
 import { PayPalScriptProvider } from '@paypal/react-paypal-js'
 export const App = () => {
+  const CI = process.env.CLIENT_ID;
   return (
-    <PayPalScriptProvider options={{ "client-id": "ATZZLDi3JSuNCfQWW08xLPSF_RLA2oQfuXrkKMy6-mP0oe6Lws9-UbvP-ZDIDkGGTBhcoVE3PESVoOec" }}>
+    <PayPalScriptProvider options={{ "client-id":CI}}>
       <AppContextProvider>
         <HashRouter>
           <Layout>

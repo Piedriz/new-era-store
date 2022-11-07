@@ -21,6 +21,8 @@
   "license": "ISC",
   "dependencies": {
     "@paypal/react-paypal-js": "^7.8.1",
+    "dotenv": "^16.0.3",
+    "dotenv-webpack": "^8.0.1",
     "leaflet": "^1.9.2",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
